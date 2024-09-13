@@ -17,6 +17,10 @@
 		8549F33F2C93D3D3009BCD22 /* GithubLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549F33E2C93D3D3009BCD22 /* GithubLoginButton.swift */; };
 		8549F3422C93D705009BCD22 /* GithubOAuthKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8549F3412C93D705009BCD22 /* GithubOAuthKeys.plist */; };
 		8549F3442C93D759009BCD22 /* GithubOAuthKeysExample.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8549F3432C93D759009BCD22 /* GithubOAuthKeysExample.plist */; };
+		8549F3462C93D972009BCD22 /* LazyLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549F3452C93D972009BCD22 /* LazyLoginView.swift */; };
+		8549F3492C93D98C009BCD22 /* LazyLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549F3482C93D98C009BCD22 /* LazyLoginViewModel.swift */; };
+		8549F34B2C93D99B009BCD22 /* LazyLoginDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549F34A2C93D99B009BCD22 /* LazyLoginDatasource.swift */; };
+		8549F34D2C93E31A009BCD22 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549F34C2C93E31A009BCD22 /* KeychainHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		8549F3402C93D4F0009BCD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8549F3412C93D705009BCD22 /* GithubOAuthKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GithubOAuthKeys.plist; sourceTree = "<group>"; };
 		8549F3432C93D759009BCD22 /* GithubOAuthKeysExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GithubOAuthKeysExample.plist; sourceTree = "<group>"; };
+		8549F3452C93D972009BCD22 /* LazyLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyLoginView.swift; sourceTree = "<group>"; };
+		8549F3482C93D98C009BCD22 /* LazyLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyLoginViewModel.swift; sourceTree = "<group>"; };
+		8549F34A2C93D99B009BCD22 /* LazyLoginDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyLoginDatasource.swift; sourceTree = "<group>"; };
+		8549F34C2C93E31A009BCD22 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		8549F3132C93D383009BCD22 /* LazyLogin */ = {
 			isa = PBXGroup;
 			children = (
+				8549F3472C93D975009BCD22 /* LazyLogin */,
 				8549F3402C93D4F0009BCD22 /* Info.plist */,
 				8549F3142C93D383009BCD22 /* LazyLoginApp.swift */,
 				8549F3162C93D383009BCD22 /* ContentView.swift */,
@@ -136,6 +145,17 @@
 				8549F3312C93D385009BCD22 /* LazyLoginUITestsLaunchTests.swift */,
 			);
 			path = LazyLoginUITests;
+			sourceTree = "<group>";
+		};
+		8549F3472C93D975009BCD22 /* LazyLogin */ = {
+			isa = PBXGroup;
+			children = (
+				8549F3452C93D972009BCD22 /* LazyLoginView.swift */,
+				8549F3482C93D98C009BCD22 /* LazyLoginViewModel.swift */,
+				8549F34A2C93D99B009BCD22 /* LazyLoginDatasource.swift */,
+				8549F34C2C93E31A009BCD22 /* KeychainHelper.swift */,
+			);
+			path = LazyLogin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +291,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8549F3172C93D383009BCD22 /* ContentView.swift in Sources */,
+				8549F3492C93D98C009BCD22 /* LazyLoginViewModel.swift in Sources */,
 				8549F3152C93D383009BCD22 /* LazyLoginApp.swift in Sources */,
+				8549F3462C93D972009BCD22 /* LazyLoginView.swift in Sources */,
+				8549F34D2C93E31A009BCD22 /* KeychainHelper.swift in Sources */,
+				8549F34B2C93D99B009BCD22 /* LazyLoginDatasource.swift in Sources */,
 				8549F33F2C93D3D3009BCD22 /* GithubLoginButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

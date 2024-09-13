@@ -13,7 +13,7 @@ struct GithubLoginButton: View {
     var body: some View {
         Button(action: action) {
             RoundedRectangle(cornerRadius: 5)
-                .tint(Color("label_color"))
+                .tint(Color("github_color"))
                 .frame(height: 60)
                 .overlay {
                     HStack {

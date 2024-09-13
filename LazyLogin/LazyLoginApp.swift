@@ -11,7 +11,7 @@ import SwiftUI
 struct LazyLoginApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LazyLoginView()
         }
     }
 }
